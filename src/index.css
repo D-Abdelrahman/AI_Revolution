@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-secondary: #8b35cf6;
+  --color-accent: #ec4899;
+  --color-dark: #1e293b;
+  --color-light: #f8fafc;
+
+  --font-main: "Inter", sans-serif;
+}
+.container-custom {
+  @apply xl:max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto;
+}
