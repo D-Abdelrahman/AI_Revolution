@@ -9,6 +9,17 @@
 
   --font-main: "Inter", sans-serif;
 }
+
+:root {
+  scroll-behavior: smooth;
+}
+
 .container-custom {
   @apply xl:max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto;
+}
+.gradient-text {
+  @apply bg-linear-to-r from-primary to-accent bg-clip-text text-transparent;
+}
+.btn-primary {
+  @apply py-2 px-4 bg-primary hover:bg-primary/90  text-white transition rounded-md;
 }
