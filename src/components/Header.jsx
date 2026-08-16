@@ -2,14 +2,12 @@ import { useState } from "react";
 import NavBar from "./NavBar";
 
 const Header = () => {
-  const [navAppear, setNavAppear] = useState({
-    lgScreen: false,
-    barsClicked: false,
-  });
+  const [navAppear, setNavAppear] = useState(false);
   return (
     <header className="fixed z-50 w-full bg-white/80 backdrop-blur-md shadow-sm">
+      {/* <div className="abs absolute w-[50%] h-full bg-red-400"></div> */}
       <div className="container-custom flex justify-between items-center h-16">
-        <span className="gradient-text text-2xl font-bold">AI Revolution</span>
+        <span className="text-gradient text-2xl font-bold">AI Revolution</span>
         <button
           type="button"
           onClick={() => setNavAppear((prev) => !prev)}
