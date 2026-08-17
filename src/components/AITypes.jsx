@@ -78,54 +78,53 @@ const aiTypes = [
     ],
   },
 ];
-const tagColors = {
-  primary: "bg-primary/10 text-primary",
-  secondary: "bg-secondary/10 text-secondary",
-  accent: "bg-accent/10 text-accent",
-};
 const AITypes = () => {
   return (
-    <section id="types" className="container-custom py-16">
-      <div className="sec-title">
-        <span className="sec-name">AI Technilogies</span>
-        <h2>
-          Different Types of
-          <span className="text-gradient"> Artificial Intelligence</span>
-        </h2>
-        <p>
-          Explore the diverse landscape of AI technologies that are shaping our
-          future.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-        {aiTypes.map((aiType, i) => (
-          <div className="aiType-cad" key={i}>
-            <img
-              className="h-48 w-full"
-              src={aiType.image}
-              alt={`${aiType} image`}
-            />
-            <div className="p-6 space-y-3">
-              <div className="flex gap-3 items-center">
-                <span className="aiType-cad-icon">{aiType.icon}</span>
-                <h3 className="text-xl font-bold"> {aiType.title}</h3>
-              </div>
-              <p className="text-gray-600">{aiType.desc}</p>
-              <div className="flex flex-wrap gap-2">
-                {aiType.tags.map((tag, i) => (
-                  <span
-                    className={`${tagColors[tag.color]} aiType-cad-tag`}
-                    key={i}
-                  >
-                    {tag.text}
+    <div className="pt-16" id="types">
+      <section className="container-custom py-5">
+        <div className="sec-title">
+          <span className="sec-name">AI Technilogies</span>
+          <h2>
+            Different Types of
+            <span className="text-gradient"> Artificial Intelligence</span>
+          </h2>
+          <p className="text-gray-800">
+            Explore the diverse landscape of AI technologies that are shaping
+            our future.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {aiTypes.map((aiType, i) => (
+            <div className="aiType-cad" key={i}>
+              <img
+                className="h-48 w-full"
+                src={aiType.image}
+                alt={`${aiType} image`}
+              />
+              <div className="p-6 space-y-3">
+                <div className="flex gap-3 items-center">
+                  <span className="item-trans-primary aiType-cad-icon">
+                    {aiType.icon}
                   </span>
-                ))}
+                  <h3 className="text-xl font-bold"> {aiType.title}</h3>
+                </div>
+                <p className="text-gray-600">{aiType.desc}</p>
+                <div className="flex flex-wrap gap-2">
+                  {aiType.tags.map((tag, i) => (
+                    <span
+                      className={`item-trans-${tag.color} aiType-cad-tag`}
+                      key={i}
+                    >
+                      {tag.text}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 
