@@ -6,13 +6,13 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="container-custom flex flex-col lg:flex-row gap-10 py-23"
+      className="container-custom overflow-hidden flex flex-col lg:flex-row gap-10 pt-23 pb-16"
     >
       <div className="flex-1 info">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           <span className="text-gradient">Artificial Intelligence </span>
           for a Smarter Future
-        </h2>
+        </h1>
         <p className="my-8 text-lg text-gray-600">
           Discover how AI is transforming industries and improving lives
           worldwide. Our cutting-edge solutions harness the power of machine
