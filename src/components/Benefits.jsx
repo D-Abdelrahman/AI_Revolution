@@ -137,13 +137,13 @@ const Benefits = () => {
   return (
     <div className="pt-16" id="benefits">
       <section className="container-custom  bg-linear-to-r from-dark to-gray-900 rounded-3xl py-16">
-        <div className="sec-title">
+        <div className="text-center">
           <span className="sec-name">AI Benefits</span>
-          <h2 className="text-white">
+          <h2 className="text-white sec-heading">
             How AI is
             <span className="text-gradient"> Transforming Our World</span>
           </h2>
-          <p className="text-gray-300">
+          <p className="mx-auto max-w-2xl text-gray-300">
             Discover the positive impact of AI across various sectors and
             industries.
           </p>

@@ -17,12 +17,8 @@ const HeroSection = () => {
             learning to solve complex problems.
           </p>
           <div className="flex gap-3 flex-col sm:flex-row">
-            <button className="btn-primary px-6! py-3!">
-              Explore AI Solutions
-            </button>
-            <button className="btn-primary-transparent  px-6! py-3!">
-              Learn More
-            </button>
+            <button className="btn-primary-lg">Explore AI Solutions</button>
+            <button className="btn-primary-transparent-lg">Learn More</button>
           </div>
           <div className="flex px-2.5 py-10 items-center">
             <div className="img-box-overlap">

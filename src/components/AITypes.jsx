@@ -82,13 +82,13 @@ const AITypes = () => {
   return (
     <div className="pt-16" id="types">
       <section className="container-custom py-5">
-        <div className="sec-title">
-          <span className="sec-name">AI Technilogies</span>
-          <h2>
+        <div className="text-center">
+          <span className="sec-name">AI Technologies</span>
+          <h2 className="sec-heading">
             Different Types of
             <span className="text-gradient"> Artificial Intelligence</span>
           </h2>
-          <p className="text-gray-800">
+          <p className="mx-auto max-w-2xl text-gray-800">
             Explore the diverse landscape of AI technologies that are shaping
             our future.
           </p>
