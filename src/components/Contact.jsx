@@ -69,7 +69,7 @@ const contactInfo = [
 
 const Contact = () => {
   return (
-    <div className="pt-16 bg-light" id="contact">
+    <div className="pt-16" id="contact">
       <section className="container-custom pt-5 pb-16">
         <div className="flex flex-col lg:flex-row items-center gap-12 ">
           {/* left content */}
