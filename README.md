@@ -1,1 +1,1 @@
-# [AI ReVolution](https://d-abdelrahman.github.io/AI_Revolution/)
+# [AI ReVolution](https://ai-revolution-iota.vercel.app/)
